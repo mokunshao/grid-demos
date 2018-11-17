@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .container{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 20% auto 20%;
+        grid-template-rows: 20% auto 20%;
+        grid-template-areas:'header header header' 'aside1 main aside2' 'footer footer footer';
+    }
+
+    header{
+        background: yellowgreen;
+        grid-area: header;
+    }
+
+    .aside1{
+        background: lightcoral;
+        grid-area: aside1;
+    }
+
+    main{
+        background: lightsalmon;
+        grid-area: main;
+    }
+    
+    .aside2{
+        background: lightblue;
+        grid-area: aside2;
+    }
+
+    footer{
+        background: limegreen;
+        grid-area: footer;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">header</header>
+        <aside class="aside1">aside1</aside>
+        <main class="main">main</main>
+        <aside class="aside2">aside2</aside>
+        <footer class="footer">footer</footer>
+    </div>
+</body>
+</html>
